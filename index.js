@@ -2,7 +2,7 @@ const Koa = require('koa');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const PORT = 4000 || process.env.PORT;
+const PORT = process.env.PORT || 4000;
 const app = new Koa();
 const url = 'https://finance.yahoo.com/quote/GME/';
 
